@@ -1,0 +1,111 @@
+body {
+    background-image: url(howl.jpg);
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #333;
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin: 100px 0 30px;
+}
+
+.icons a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icons a:hover {
+    transform: scale(1.1);
+}
+
+.icons img {
+    width: 200px;
+    height: auto;
+}
+
+.icons img:hover {
+    opacity: 0.9;
+}
+
+.home-icon {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
+
+.home-icon img {
+    width: 50px;
+    height: auto;
+}
+
+.home-icon:hover {
+    transform: translateX(-50%) translateY(-10px);
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .icons {
+        flex-direction: column;
+        gap: 30px;
+        margin: 50px 0 20px;
+    }
+
+    .icons img {
+        width: 150px;
+    }
+
+    .home-icon {
+        bottom: 40px;
+    }
+
+    .home-icon img {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .icons {
+        flex-direction: column;
+        gap: 20px;
+        margin: 30px 0 15px;
+    }
+
+    .icons img {
+        width: 120px;
+    }
+
+    .home-icon {
+        bottom: 30px;
+    }
+
+    .home-icon img {
+        width: 30px;
+    }
+}
